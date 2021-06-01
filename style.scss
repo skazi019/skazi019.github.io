@@ -1,0 +1,381 @@
+@import './scss/fontawesome.scss';
+@import './scss/brands.scss';
+@import './scss/solid.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+:root {
+    --line-height: 1.2em;
+    --content-font-size: .9em;
+    --main-heading-size: 1.3em;
+    --project-heading-size: 1em;
+    --heading-font: 'Georgia';
+    --content-font: 'Roboto';
+    --special-font-padauk: 'Padauk';
+    --special-font-poppins: 'Poppins';
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--content-font);
+    max-width: 794px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+} 
+
+.container {
+    margin: 1em .5em;
+    padding: .3em;
+}
+
+
+.editor{
+    background-color: rgb(14, 14, 65);
+    border-radius: 1.5em;
+    color: white;
+    height: 18em;
+    display: grid;
+    grid-template-rows: 25px 1fr;
+    position: relative;
+    z-index: 999;
+    box-shadow: 0 .3em .7em rgba(99, 99, 99, 0.671);
+
+
+    .top-bar {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1.5em;
+        font-family: var(--special-font-poppins);
+        
+        .file-name {
+            text-align: center;
+            margin-right: 5em;
+            color: lightgray;
+            font-size: .7em;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: left;
+
+            div {
+                margin-right: .3em;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            .cross-button {
+                width: .7em;
+                height: .7em;
+                background-color: rgb(255, 86, 86);
+                border-radius: 50%;
+            }
+            .expand-button {
+                width: .7em;
+                height: .7em;
+                background-color: rgb(255, 255, 123);
+                border-radius: 50%;
+            }
+            .minimize-button {
+                width: .7em;
+                height: .7em;
+                background-color: rgb(131, 255, 131);
+                border-radius: 50%;
+            }
+        }
+
+    }
+
+    header {
+        display: grid;
+        grid-template-rows: 1fr .5fr;
+        justify-content: center;
+        align-items: center;
+
+        .name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3em;
+            font-family: var(--special-font-poppins);
+            font-size: 2.5em;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            padding: 0 0 .5em 0;
+
+            .contact-info-list {
+                list-style: none;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                justify-content: center;
+                align-items: top;
+                padding-left: 0;
+                font-family: var(--special-font-poppins);
+                font-size: .8em;
+
+                li {
+                    margin: 0 1em;
+                    text-align: center;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+
+                    span {
+                        display: block;
+                        font-size: 1.5em;
+                    }
+
+                }
+
+            }
+        }
+    }
+        .editor-code {
+
+
+            .code-1 {
+                z-index: -10;
+                // color: rgb(114, 114, 114);
+                position: absolute;
+                top: 2em;
+                left: -10em;
+                opacity: .6;
+
+                .import {
+                    color: rgb(243, 0, 243);
+                }
+
+                .keyword {
+                    color: red;
+                }
+
+                .class {
+                    color: yellow;
+                }
+
+                .method {
+                    color: rgb(49, 255, 49);
+                }
+            }
+        }
+
+        // .coding-editor-icon {
+        //     position: absolute;
+        //     top: 6em;
+        //     right: 3em;
+        // }
+
+        // .python-file-icon {
+        //     position: absolute;
+        //     top: 2.5em;
+        //     right: 27em;
+        // }
+
+        // .javascript-icon {
+        //     position: absolute;
+        //     top: 11em;
+        //     right: 11em;
+        // }
+
+        // .github-icon {
+        //     position: absolute;
+        //     top: 1em;
+        //     right: 13em;
+        // }
+
+}
+
+.resume {
+    padding: 0 .7em;
+
+    ul {
+        margin: 0;
+        list-style: none;
+    }
+}
+
+
+.summary {
+    font-size: var(--project-heading-size);
+    font-family: var(--content-font);
+    line-height: var(--line-height);
+}
+
+.main-heading {
+    font-size: var(--main-heading-size);
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.skills {
+    line-height: var(--line-height);
+
+    .skills-list {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        justify-content: left;
+        align-items: top;
+        padding-left: 0;
+        margin-left: 1em;
+        margin-top: .5em;
+        font-size: var(--content-font-size);
+        
+        span {    
+            font-weight: 500;
+        }
+    }
+
+}
+
+.work-ex {
+    margin-top: 1em;
+    line-height: var(--line-height);
+
+    .mahindra-heading {
+        margin-top: .5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'title title'
+        'company date';
+
+        .title-mahindra {
+            grid-area: title;
+            font-size: var(--project-heading-size);
+        }
+
+        .mahindra-company-name {
+            grid-area: company;
+            font-size: var(--project-heading-size);
+        }
+
+        .mahindra-work-period {
+            grid-area: date;
+            text-align: right;
+            font-size: var(--project-heading-size);
+        }
+
+    }
+
+
+    .mahindra-experience .mahindra-projects {
+        padding-left: 0;
+        margin-left: 1em;
+
+        .project-heading {
+            font-size: var(--project-heading-size);
+            font-weight: 700;
+            margin-top: 1.5em;
+            margin-bottom: 0;
+
+        }
+
+        .project-ex {
+            padding-left: 0;
+            margin-top: .3em;
+            font-size: var(--content-font-size);
+        
+
+            .project-sub-heading {
+                font-weight: 500;
+                // font-weight: 700;
+            }
+
+            .problem-solution {
+                display: grid;
+                grid-template-columns: 1fr .05fr 1fr;
+                justify-content: center;
+
+                .problem-solution-divider {
+                    background-color: black;
+                    width: .15em;
+                }
+            }
+
+            .project-responsibilities {
+                list-style-type:disc;
+                padding-left: 1.5em;
+
+
+                .ainac-features {
+                    padding-left: 1em;
+                    list-style-type: circle;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
+    }
+
+}
+
+.achievements {
+    margin-top: 1em;
+
+    .achievements-list {
+        padding: 0;
+        margin-left: 1em;
+        margin-top: .5em;
+        line-height: var(--line-height);
+        font-size: var(--content-font-size);
+
+        li{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: .2em;
+
+            .achievment-heading{
+                font-weight: 500;
+            }
+        }
+   } 
+}
+
+.interests {
+    margin-top: 1em;
+
+    .interests-list {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+    }
+}
+
+.education {
+    margin-top: 1em;
+
+    .education-heading{
+        margin-top: .5em;
+        margin-left: .5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: var(--project-heading-size);
+
+        .bachelors-year {
+            text-align: right;
+        }
+
+        .university {
+            font-style: italic;
+        }
+
+        .cgpa {
+            text-align: right;
+            font-style: italic;
+        }
+    }
+}
