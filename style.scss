@@ -19,13 +19,12 @@
 }
 
 body {
-    margin: 0;
+    margin: auto;
     box-sizing: border-box;
     font-family: var(--content-font);
     max-width: 794px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    border-radius: 1.5em;
+    box-shadow: 0 0 1em rgba(99, 99, 99, 1);
 } 
 
 .container {
@@ -43,6 +42,7 @@ body {
     grid-template-rows: 25px 1fr;
     position: relative;
     z-index: 999;
+    margin-top: .5em;
     box-shadow: 0 .3em .7em rgba(99, 99, 99, 0.671);
 
 
@@ -346,6 +346,7 @@ body {
 
 .interests {
     margin-top: 1em;
+    margin-bottom: 1em;
 
     .interests-list {
         padding: 0;
