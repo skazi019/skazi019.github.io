@@ -24,7 +24,7 @@ body {
     font-family: var(--content-font);
     max-width: 794px;
     border-radius: 1.5em;
-    box-shadow: 0 0 .6em rgba(99, 99, 99, .7);
+    // box-shadow: 0 0 .6em rgba(99, 99, 99, .7);
 } 
 
 .container {
@@ -161,7 +161,7 @@ body {
                 }
 
                 .class {
-                    color: yellow;
+                    color: rgb(255, 204, 0);
                 }
 
                 .method {
@@ -169,31 +169,6 @@ body {
                 }
             }
         }
-
-        // .coding-editor-icon {
-        //     position: absolute;
-        //     top: 6em;
-        //     right: 3em;
-        // }
-
-        // .python-file-icon {
-        //     position: absolute;
-        //     top: 2.5em;
-        //     right: 27em;
-        // }
-
-        // .javascript-icon {
-        //     position: absolute;
-        //     top: 11em;
-        //     right: 11em;
-        // }
-
-        // .github-icon {
-        //     position: absolute;
-        //     top: 1em;
-        //     right: 13em;
-        // }
-
 }
 
 .resume {
@@ -350,9 +325,10 @@ body {
 
     .interests-list {
         padding: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        text-align: left;
     }
 }
 
