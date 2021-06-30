@@ -6221,7 +6221,7 @@ body {
 .editor .top-bar .nav-buttons .expand-button {
   width: .7em;
   height: .7em;
-  background-color: #ffff7b;
+  background-color: #ffe07b;
   border-radius: 50%;
 }
 
@@ -6314,7 +6314,7 @@ body {
 }
 
 .editor .editor-code .code-1 .class {
-  color: #ffcc00;
+  color: yellow;
 }
 
 .editor .editor-code .code-1 .method {
