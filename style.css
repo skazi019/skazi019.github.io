@@ -6147,6 +6147,8 @@ body {
   font-family: var(--content-font);
   max-width: 794px;
   border-radius: 1.5em;
+  -webkit-box-shadow: 0 0 0.6em rgba(99, 99, 99, 0.7);
+          box-shadow: 0 0 0.6em rgba(99, 99, 99, 0.7);
 }
 
 .container {
