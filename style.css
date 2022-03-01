@@ -6332,7 +6332,9 @@ body {
 
 .divider {
   background-color: black;
-  width: 80%;
+  width: 85%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .summary {
