@@ -24,7 +24,7 @@ body {
     font-family: var(--content-font);
     max-width: 794px;
     border-radius: 1.5em;
-    box-shadow: 0 0 .6em rgba(99, 99, 99, .7);
+    // box-shadow: 0 0 .6em rgba(99, 99, 99, .7);
 } 
 
 .container {
@@ -237,11 +237,13 @@ body {
         .title-mahindra {
             grid-area: title;
             font-size: var(--project-heading-size);
+            font-style: italic;
         }
 
         .mahindra-company-name {
             grid-area: company;
             font-size: var(--project-heading-size);
+            font-style: italic;
         }
 
         .mahindra-work-period {

@@ -6147,8 +6147,6 @@ body {
   font-family: var(--content-font);
   max-width: 794px;
   border-radius: 1.5em;
-  -webkit-box-shadow: 0 0 0.6em rgba(99, 99, 99, 0.7);
-          box-shadow: 0 0 0.6em rgba(99, 99, 99, 0.7);
 }
 
 .container {
@@ -6397,6 +6395,7 @@ body {
   -ms-grid-column-span: 2;
   grid-area: title;
   font-size: var(--project-heading-size);
+  font-style: italic;
 }
 
 .work-ex .mahindra-heading .mahindra-company-name {
@@ -6404,6 +6403,7 @@ body {
   -ms-grid-column: 1;
   grid-area: company;
   font-size: var(--project-heading-size);
+  font-style: italic;
 }
 
 .work-ex .mahindra-heading .mahindra-work-period {
