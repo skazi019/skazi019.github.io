@@ -6330,6 +6330,11 @@ body {
   list-style: none;
 }
 
+.divider {
+  background-color: black;
+  width: 80%;
+}
+
 .summary {
   font-size: var(--project-heading-size);
   font-family: var(--content-font);
@@ -6350,8 +6355,8 @@ body {
 .skills .skills-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1.5fr 1fr;
-      grid-template-columns: 1.5fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;

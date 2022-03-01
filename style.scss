@@ -180,6 +180,11 @@ body {
     }
 }
 
+.divider {
+    background-color: black;
+    width: 80%;
+}
+
 
 .summary {
     font-size: var(--project-heading-size);
@@ -199,7 +204,7 @@ body {
 
     .skills-list {
         display: grid;
-        grid-template-columns: 1.5fr 1fr;
+        grid-template-columns: 1fr 1fr;
         justify-content: left;
         align-items: top;
         padding-left: 0;
